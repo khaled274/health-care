@@ -36,21 +36,6 @@ class DioHelper {
   }
 
 //===============================================================
-  static Future<Response> getDataByToken({
-    required String url,
-    Map<String, dynamic>? query,
-  }) async {
-    dio!.options.headers = {
-      "Accept": "application/json",
-      'Authorization': 'Bearer ${CacheHelper.getUserToken}',
-    };
-    return await dio!.get(
-      url,
-      queryParameters: query,
-    );
-  }
-
-//===============================================================
   static Future<Response<dynamic>> postData({
     required String url,
     dynamic data,
@@ -61,23 +46,6 @@ class DioHelper {
       'Authorization': 'Bearer ${CacheHelper.getUserToken}',
     };
     return dio!.post(
-      url,
-      queryParameters: query,
-      data: data,
-    );
-  }
-
-//===============================================================
-
-  static Future<Response> putData({
-    required String url,
-    required Map<String, dynamic> data,
-    Map<String, dynamic>? query,
-  }) async {
-    dio!.options.headers = {
-      "Accept": "application/json",
-    };
-    return dio!.put(
       url,
       queryParameters: query,
       data: data,

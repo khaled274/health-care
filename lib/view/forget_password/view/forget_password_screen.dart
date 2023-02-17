@@ -21,10 +21,10 @@ class ForgetPasswordScreen extends StatelessWidget {
 
           return Scaffold(
             appBar: AppBar(
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.white,
               elevation: 0.0,
             ),
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.white,
             body: SafeArea(
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
@@ -60,7 +60,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                           },
                           controller: cubit.phoneController,
                           hintText: "Phone Number",
-                          iconColor: Colors.green,
+                          iconColor: Colors.blue,
                         ),
                         const SizedBox(height: 30),
                         GestureDetector(

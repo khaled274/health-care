@@ -23,7 +23,7 @@ class LoginScreen extends StatelessWidget {
           final cubit = LoginCubit.get(context);
 
           return Scaffold(
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.white,
             body: SafeArea(
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
@@ -59,7 +59,7 @@ class LoginScreen extends StatelessWidget {
                           },
                           controller: cubit.emailController,
                           hintText: "Email Address",
-                          iconColor: Colors.green,
+                          iconColor: Colors.blue,
                         ),
                         const SizedBox(height: 30),
                         AuthTextFromField(
@@ -78,12 +78,13 @@ class LoginScreen extends StatelessWidget {
                           hintText: "Password",
                           icon: cubit.suffix,
                           onPressed: cubit.changePasswordVisibility,
-                          iconColor: Colors.green.withOpacity(.7),
+                          iconColor: Colors.blue.withOpacity(.7),
                         ),
                         const SizedBox(height: 30),
                         GestureDetector(
                           onTap: () {
-                            MagicRouter.navigateTo(ForgetPasswordScreen());
+                            MagicRouter.navigateTo(
+                                const ForgetPasswordScreen());
                           },
                           child: const Align(
                             alignment: Alignment.centerRight,
@@ -103,7 +104,7 @@ class LoginScreen extends StatelessWidget {
                           height: 50,
                           onPressed: () {
                             if (cubit.loginFormKey.currentState!.validate()) {
-                              MagicRouter.navigateTo(ProfileScreen());
+                              MagicRouter.navigateTo(const ProfileScreen());
                             }
                           },
                           text: "login",

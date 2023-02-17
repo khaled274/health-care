@@ -20,10 +20,10 @@ class RegisterScreen extends StatelessWidget {
 
           return Scaffold(
             appBar: AppBar(
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.white,
               elevation: 0.0,
             ),
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.white,
             body: SafeArea(
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
@@ -58,8 +58,8 @@ class RegisterScreen extends StatelessWidget {
                             return null;
                           },
                           controller: cubit.emailController,
-                          hintText: "Email Address",
-                          iconColor: Colors.green,
+                          hintText: "User Name",
+                          iconColor: Colors.blue,
                         ),
                         const SizedBox(height: 30),
                         AppTextFormField(
@@ -76,7 +76,7 @@ class RegisterScreen extends StatelessWidget {
                           },
                           controller: cubit.emailController,
                           hintText: "Email Address",
-                          iconColor: Colors.green,
+                          iconColor: Colors.blue,
                         ),
                         const SizedBox(height: 30),
                         AuthTextFromField(
@@ -95,7 +95,7 @@ class RegisterScreen extends StatelessWidget {
                           hintText: "Password",
                           icon: cubit.suffix,
                           onPressed: cubit.changePasswordVisibility,
-                          iconColor: Colors.green.withOpacity(.7),
+                          iconColor: Colors.blue.withOpacity(.7),
                         ),
                         const SizedBox(height: 30),
                         const SizedBox(height: 50),

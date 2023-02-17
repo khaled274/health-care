@@ -19,7 +19,7 @@ class ProfileScreen extends StatelessWidget {
         builder: (context, state) {
           final cubit = ProfileCubit.get(context);
           return Scaffold(
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.white,
             body: SafeArea(
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
@@ -54,7 +54,7 @@ class ProfileScreen extends StatelessWidget {
                                 onTap: () {
                                   cubit.pickImageFromGallery(cubit.userimage);
                                 },
-                                child: const Icon(Icons.camera),
+                                child: const Icon(Icons.camera_alt_outlined),
                               ),
                             )
                           ],
@@ -73,8 +73,8 @@ class ProfileScreen extends StatelessWidget {
                             return null;
                           },
                           controller: cubit.firstNameController,
-                          hintText: "Email Address",
-                          iconColor: Colors.green,
+                          hintText: "First Name",
+                          iconColor: Colors.blue,
                         ),
                         const SizedBox(height: 20),
                         AppTextFormField(
@@ -90,8 +90,8 @@ class ProfileScreen extends StatelessWidget {
                             return null;
                           },
                           controller: cubit.firstNameController,
-                          hintText: "Email Address",
-                          iconColor: Colors.green,
+                          hintText: "Last Name",
+                          iconColor: Colors.blue,
                         ),
                         const SizedBox(height: 20),
                         AppTextFormField(
@@ -107,13 +107,13 @@ class ProfileScreen extends StatelessWidget {
                             return null;
                           },
                           controller: cubit.firstNameController,
-                          hintText: "Email Address",
-                          iconColor: Colors.green,
+                          hintText: "Age",
+                          iconColor: Colors.blue,
                         ),
                         const SizedBox(height: 20),
                         AppTextFormField(
                           maxLines: 1,
-                          icon: Icons.person,
+                          icon: Icons.phone,
                           validator: (value) {
                             if (value == null || value.trim().isEmpty) {
                               return 'This field is required';
@@ -124,13 +124,13 @@ class ProfileScreen extends StatelessWidget {
                             return null;
                           },
                           controller: cubit.firstNameController,
-                          hintText: "Email Address",
-                          iconColor: Colors.green,
+                          hintText: "Phone Number",
+                          iconColor: Colors.blue,
                         ),
                         const SizedBox(height: 20),
                         AppTextFormField(
                           maxLines: 1,
-                          icon: Icons.person,
+                          icon: Icons.info,
                           validator: (value) {
                             if (value == null || value.trim().isEmpty) {
                               return 'This field is required';
@@ -141,13 +141,13 @@ class ProfileScreen extends StatelessWidget {
                             return null;
                           },
                           controller: cubit.firstNameController,
-                          hintText: "Email Address",
-                          iconColor: Colors.green,
+                          hintText: "Disease Type",
+                          iconColor: Colors.blue,
                         ),
                         const SizedBox(height: 20),
                         AppTextFormField(
                           maxLines: 1,
-                          icon: Icons.person,
+                          icon: Icons.info,
                           validator: (value) {
                             if (value == null || value.trim().isEmpty) {
                               return 'This field is required';
@@ -158,25 +158,25 @@ class ProfileScreen extends StatelessWidget {
                             return null;
                           },
                           controller: cubit.firstNameController,
-                          hintText: "Email Address",
-                          iconColor: Colors.green,
+                          hintText: "Disease Discription",
+                          iconColor: Colors.blue,
                         ),
                         const SizedBox(height: 20),
                         Row(
                           children: [
                             const Text("x Ray :"),
-                            const SizedBox(width: 20),
+                            const SizedBox(width: 80),
                             GestureDetector(
                               onTap: () {
                                 cubit.pickImageFromGallery(cubit.xRayimage);
                               },
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 padding: const EdgeInsets.all(10),
-                                child: const Text('Chose Image'),
+                                child: const Text('Choose Image'),
                               ),
                             ),
                           ],
@@ -184,19 +184,19 @@ class ProfileScreen extends StatelessWidget {
                         const SizedBox(height: 20),
                         Row(
                           children: [
-                            const Text("x Ray :"),
-                            const SizedBox(width: 20),
+                            const Text("Medicines :"),
+                            const SizedBox(width: 50),
                             GestureDetector(
                               onTap: () {
                                 cubit.pickImageFromGallery(cubit.medicinimage);
                               },
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 padding: const EdgeInsets.all(10),
-                                child: const Text('Chose Image'),
+                                child: const Text('Choose Image'),
                               ),
                             ),
                           ],
@@ -204,19 +204,19 @@ class ProfileScreen extends StatelessWidget {
                         const SizedBox(height: 20),
                         Row(
                           children: [
-                            const Text("x Ray :"),
-                            const SizedBox(width: 20),
+                            const Text("Tests :"),
+                            const SizedBox(width: 82),
                             GestureDetector(
                               onTap: () {
                                 cubit.pickImageFromGallery(cubit.testsimage);
                               },
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 padding: const EdgeInsets.all(10),
-                                child: const Text('Chose Image'),
+                                child: const Text('Choose Image'),
                               ),
                             ),
                           ],

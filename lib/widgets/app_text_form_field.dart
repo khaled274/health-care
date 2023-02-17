@@ -28,15 +28,15 @@ class AppTextFormField extends StatelessWidget {
         filled: true,
         fillColor: Colors.white,
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10.0),
+          borderRadius: BorderRadius.circular(30.0),
           borderSide: const BorderSide(
-            color: Colors.white,
+            color: Colors.blue,
           ),
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10.0),
+          borderRadius: BorderRadius.circular(30.0),
           borderSide: const BorderSide(
-            color: Colors.white,
+            color: Colors.blue,
             width: 2.0,
           ),
         ),

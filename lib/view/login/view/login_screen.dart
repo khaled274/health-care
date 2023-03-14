@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:health_care/core/router/router.dart';
-import 'package:health_care/view/register/view/register_screen.dart';
 
 import '../../../widgets/app_text_form_field.dart';
 import '../../../widgets/auth_text_form_field.dart';
 import '../../../widgets/main_button.dart';
+import '../../doctorScreen/view/DoctorScreen.dart';
 import '../../forget_password/view/forget_password_screen.dart';
-import '../../profile/view/profile_screen.dart';
+
+import '../../homepage/view/homePage_Screen.dart';
+import '../../register/view/register_screen.dart';
 import '../cubit/login_cubit.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -104,7 +106,7 @@ class LoginScreen extends StatelessWidget {
                           height: 50,
                           onPressed: () {
                             if (cubit.loginFormKey.currentState!.validate()) {
-                              MagicRouter.navigateTo(const ProfileScreen());
+                              MagicRouter.navigateTo(const DoctorScreen());
                             }
                           },
                           text: "login",

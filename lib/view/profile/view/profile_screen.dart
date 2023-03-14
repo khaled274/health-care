@@ -89,7 +89,7 @@ class ProfileScreen extends StatelessWidget {
                             }
                             return null;
                           },
-                          controller: cubit.firstNameController,
+                          controller: cubit.lastNameController,
                           hintText: "Last Name",
                           iconColor: Colors.blue,
                         ),
@@ -106,7 +106,7 @@ class ProfileScreen extends StatelessWidget {
                             }
                             return null;
                           },
-                          controller: cubit.firstNameController,
+                          controller: cubit.ageController,
                           hintText: "Age",
                           iconColor: Colors.blue,
                         ),
@@ -123,7 +123,7 @@ class ProfileScreen extends StatelessWidget {
                             }
                             return null;
                           },
-                          controller: cubit.firstNameController,
+                          controller: cubit.phoneNumberController,
                           hintText: "Phone Number",
                           iconColor: Colors.blue,
                         ),
@@ -140,7 +140,7 @@ class ProfileScreen extends StatelessWidget {
                             }
                             return null;
                           },
-                          controller: cubit.firstNameController,
+                          controller: cubit.disaeseTypeController,
                           hintText: "Disease Type",
                           iconColor: Colors.blue,
                         ),
@@ -157,7 +157,7 @@ class ProfileScreen extends StatelessWidget {
                             }
                             return null;
                           },
-                          controller: cubit.firstNameController,
+                          controller: cubit.disaeseDiscController,
                           hintText: "Disease Discription",
                           iconColor: Colors.blue,
                         ),

@@ -57,7 +57,7 @@ class RegisterScreen extends StatelessWidget {
                             }
                             return null;
                           },
-                          controller: cubit.emailController,
+                          controller: cubit.userNAmeController,
                           hintText: "User Name",
                           iconColor: Colors.blue,
                         ),
